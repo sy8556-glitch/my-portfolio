@@ -4,121 +4,263 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sohyun Yu | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="navbar">
     <div class="container nav-content">
-      <h1 class="logo">Sohyun Yu</h1>
+      <a href="#" class="logo">Sohyun Yu</a>
+
       <nav>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#journey">Journey</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <section class="hero">
-    <div class="container hero-content">
-      <p class="tag">AI · Web · Problem Solving</p>
-      <h2>I build small projects to learn AI and web development.</h2>
-      <p class="hero-text">
-        I am a student interested in combining AI and web development.
-        I enjoy learning by building practical projects and improving step by step.
-      </p>
-      <div class="hero-buttons">
-        <a href="#projects" class="btn primary">View Projects</a>
-        <a href="#contact" class="btn secondary">Contact Me</a>
-      </div>
-    </div>
-  </section>
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <p class="tag">AI · Web · Problem Solving</p>
+          <p class="hero-intro">Hi, I'm</p>
+          <h1 class="hero-title">Sohyun Yu</h1>
+          <h2 class="hero-subtitle">AI Student & Aspiring Developer</h2>
 
-  <section id="about" class="section">
-    <div class="container">
-      <h3 class="section-title">About Me</h3>
-      <p class="section-text">
-        Hi, I’m Sohyun Yu. I study AI and I’m interested in building useful web applications.
-        I like learning through hands-on projects, especially projects that connect frontend,
-        backend, and AI features together.
-      </p>
-    </div>
-  </section>
+          <p class="hero-text">
+            I enjoy building projects that combine AI and web development.
+            My goal is to turn ideas into practical products by learning,
+            experimenting, and building step by step.
+          </p>
 
-  <section id="skills" class="section alt-bg">
-    <div class="container">
-      <h3 class="section-title">Skills</h3>
-      <div class="cards">
-        <div class="card">
-          <h4>Frontend</h4>
-          <p>HTML, CSS, JavaScript, React, Next.js</p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn primary">View My Projects</a>
+            <a href="#contact" class="btn secondary">Get In Touch</a>
+          </div>
+
+          <div class="hero-links">
+            <a href="https://github.com/sy8556-glitch" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="mailto:0191kelly@gmail.com">Email</a>
+          </div>
         </div>
-        <div class="card">
-          <h4>Backend</h4>
-          <p>Python, Java, C, FastAPI</p>
-        </div>
-        <div class="card">
-          <h4>Database & Tools</h4>
-          <p>SQLite, MySQL, Git, GitHub, VS Code</p>
+
+        <div class="hero-right">
+          <div class="hero-image-card">
+            <img src="profile.png" alt="AI styled portrait of Sohyun Yu" />
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="projects" class="section">
-    <div class="container">
-      <h3 class="section-title">Projects</h3>
-      <div class="project-list">
-        <div class="project-card">
-          <h4>Emotion Diary</h4>
-          <p>
-            A diary web app that analyzes the emotion of daily writing
-            and visualizes emotion trends.
-          </p>
-          <p><strong>Tech:</strong> React, FastAPI, SQLite</p>
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">About</p>
+          <h3 class="section-title">About Me</h3>
         </div>
 
-        <div class="project-card">
-          <h4>AI Code Reviewer</h4>
-          <p>
-            A web app where users submit code and receive AI-generated
-            feedback about readability, bugs, and improvements.
-          </p>
-          <p><strong>Tech:</strong> React, FastAPI, OpenAI API</p>
-        </div>
+        <div class="about-grid">
+          <div class="glass-card about-main">
+            <p>
+              I’m a student at RIT studying Artificial Intelligence, and I’m especially
+              interested in combining AI with web development to create meaningful,
+              user-friendly applications.
+            </p>
+            <p>
+              I learn best by building. That’s why I enjoy turning small ideas into
+              real projects that connect frontend, backend, and AI features together.
+            </p>
 
-        <div class="project-card">
-          <h4>More Projects Coming Soon</h4>
-          <p>
-            I am continuously building small projects to improve my
-            development and AI skills.
-          </p>
-          <p><strong>Focus:</strong> Learning by building</p>
+            <div class="about-meta">
+              <div class="meta-item">
+                <span class="meta-label">Location</span>
+                <span class="meta-value">Rochester, NY</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">Major</span>
+                <span class="meta-value">Artificial Intelligence</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">Focus</span>
+                <span class="meta-value">AI · Web · Building</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass-card about-side">
+            <h4>What I’m Interested In</h4>
+            <ul class="interest-list">
+              <li>AI + Web Applications</li>
+              <li>Natural Language Processing</li>
+              <li>Data Visualization</li>
+              <li>Frontend / Backend Integration</li>
+              <li>Learning through real projects</li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="section alt-bg">
-    <div class="container">
-      <h3 class="section-title">Why I Build</h3>
-      <p class="section-text">
-        I want to become a developer who can turn ideas into real products.
-        For me, building projects is the best way to understand programming,
-        AI, and problem solving more deeply.
-      </p>
-    </div>
-  </section>
+    <section id="skills" class="section section-soft">
+      <div class="container">
+        <div class="section-header center">
+          <p class="section-label">Skills</p>
+          <h3 class="section-title">Skills & Technologies</h3>
+        </div>
 
-  <section id="contact" class="section">
-    <div class="container">
-      <h3 class="section-title">Contact</h3>
-      <p class="section-text">Email: 0191kelly@gmail.com</p>
-      <p class="section-text">GitHub: github.com/sy8556-glitch</p>
-    </div>
-  </section>
+        <div class="skills-grid">
+          <div class="glass-card skill-card">
+            <h4>Frontend</h4>
+            <p>HTML, CSS, JavaScript, React, Next.js</p>
+          </div>
+
+          <div class="glass-card skill-card">
+            <h4>Backend</h4>
+            <p>Python, FastAPI, REST API Design</p>
+          </div>
+
+          <div class="glass-card skill-card">
+            <h4>Database</h4>
+            <p>SQLite, MySQL, Data Modeling</p>
+          </div>
+
+          <div class="glass-card skill-card">
+            <h4>Tools</h4>
+            <p>Git, GitHub, VS Code, Postman</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Projects</p>
+          <h3 class="section-title">My Projects</h3>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-top project-top-purple"></div>
+            <div class="project-body">
+              <h4>Emotion Diary</h4>
+              <p>
+                A diary web app that analyzes emotions from daily entries and
+                visualizes emotional trends over time.
+              </p>
+              <p class="tech"><strong>Tech:</strong> React, FastAPI, SQLite</p>
+              <div class="project-actions">
+                <a href="https://github.com/sy8556-glitch" target="_blank" rel="noopener noreferrer">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-top project-top-dark"></div>
+            <div class="project-body">
+              <h4>AI Code Reviewer</h4>
+              <p>
+                A web app that receives code input and returns AI-powered
+                feedback about readability, bugs, and improvements.
+              </p>
+              <p class="tech"><strong>Tech:</strong> React, FastAPI, OpenAI API</p>
+              <div class="project-actions">
+                <a href="https://github.com/sy8556-glitch" target="_blank" rel="noopener noreferrer">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-top project-top-light"></div>
+            <div class="project-body">
+              <h4>More Projects Coming Soon</h4>
+              <p>
+                I’m continuously building smaller projects to improve my skills
+                in AI, web development, and product thinking.
+              </p>
+              <p class="tech"><strong>Focus:</strong> Learning by building</p>
+              <div class="project-actions">
+                <a href="#contact">Stay Connected</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="journey" class="section section-soft">
+      <div class="container">
+        <div class="section-header center">
+          <p class="section-label">Journey</p>
+          <h3 class="section-title">My Journey</h3>
+        </div>
+
+        <div class="journey-line">
+          <div class="journey-item">
+            <span class="dot"></span>
+            <h4>Explore</h4>
+            <p>Started with curiosity about programming and technology.</p>
+          </div>
+
+          <div class="journey-item">
+            <span class="dot"></span>
+            <h4>Learn</h4>
+            <p>Studying AI concepts and building core development skills.</p>
+          </div>
+
+          <div class="journey-item">
+            <span class="dot"></span>
+            <h4>Build</h4>
+            <p>Creating projects that combine frontend, backend, and AI.</p>
+          </div>
+
+          <div class="journey-item">
+            <span class="dot"></span>
+            <h4>Grow</h4>
+            <p>Turning ideas into better products through steady practice.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="contact-box">
+          <div class="contact-left">
+            <p class="section-label light">Contact</p>
+            <h3>Let’s Connect!</h3>
+            <p>
+              I’m always open to discussing ideas, projects, and opportunities.
+            </p>
+          </div>
+
+          <div class="contact-right">
+            <p>
+              <span>Email</span>
+              <a href="mailto:0191kelly@gmail.com">0191kelly@gmail.com</a>
+            </p>
+            <p>
+              <span>GitHub</span>
+              <a href="https://github.com/sy8556-glitch" target="_blank" rel="noopener noreferrer">
+                github.com/sy8556-glitch
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <footer class="footer">
     <div class="container">
