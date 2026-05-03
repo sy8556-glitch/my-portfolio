@@ -73,6 +73,10 @@ a {
   letter-spacing: -0.03em;
 }
 
+.project-top-blue {
+  background: linear-gradient(135deg, #4dabf7, #1c7ed6);
+}
+
 .nav-links {
   list-style: none;
   display: flex;
